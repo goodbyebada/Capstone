@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
+import LoginPage from "./routes/LoginPage";
+import Books from "./Books";
+import UserBooks from "./routes/UserBooks";
+import AboutBook from "./routes/AboutBook";
+import { useState } from "react";
 
 function App() {
+  const [modal, setModal] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/UserBooks" element={<UserBooks />} />
+        <Route path="/loginpage" element={<LoginPage />} />
+        <Route path="/AboutBook" element={<AboutBook />} />
+      </Routes>
+    </Router>
   );
 }
 
