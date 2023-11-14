@@ -8,14 +8,16 @@
 }
 
 .SingleBook {
-  flex-direction: column;
-  /* justify-content: center; */
+  /* flex-direction: column;
   text-align: center;
-  padding: 10px;
 
-  display: flex; /* 요소를 가로로 정렬하기 위해 Flexbox 레이아웃을 사용 */
-  align-items: center; /* 요소를 수직으로 중앙 정렬 */
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  /* width: 100px; */
+  /* height: 100px; */
+  box-sizing: content-box;
 }
 
 .SetOfBooks {
@@ -23,24 +25,18 @@
 
 .BooksLists {
   display: flex;
-  /* justify-content: center; */
-  padding: 20px;
-  margin: 10px;
   border: solid #beadfa;
   border-radius: 20px;
+  width: 100%;
+  height: 400px;
+}
 
-  .BorrowBook {
-    background-color: #d2e0fb;
-  }
+.BorrowBook {
+  background-color: #d2e0fb;
+  width: 100px;
 }
 
 .RecommandBooks {
-  margin: 10px;
-  padding: 10px;
-  font-size: 20px;
-  overflow: auto;
-
   background-color: #d7e5ca;
-  /* overflow: auto; */
-  overflow: auto;
+  overflow-x: scroll;
 }
