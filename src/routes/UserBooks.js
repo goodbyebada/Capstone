@@ -11,11 +11,9 @@ function UserBooks() {
   return (
     <div className="BooksDiv">
       <header className="introHeader">
-        <h2> "{userName}님을 위한 오늘의 책은?"</h2>
+        <h2> "{userName} 님을 위한 오늘의 책은?"</h2>
         <p> 책을 추천해드려요! </p>
       </header>
-
-      
 
       <div className="SetOfBooks">
         <BookLists />

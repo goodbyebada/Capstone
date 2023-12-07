@@ -72,7 +72,7 @@ function LoginPage() {
     <div className="loginPage">
       <div className="loginForm">
         <form className="borderBox">
-          <p>로그인 화면</p>
+          <p>Sign In</p>
           <div className="row">
             <input
               type="text"
@@ -90,8 +90,8 @@ function LoginPage() {
             ></input>
           </div>
 
-          <button>회원가입</button>
-          <button type="submit" onClick={loginFun}>
+          <button className="form_btn">회원가입</button>
+          <button type="submit" onClick={loginFun} className="form_btn">
             login
           </button>
         </form>

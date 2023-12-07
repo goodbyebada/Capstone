@@ -17,7 +17,7 @@ function SingleBook({ genres }) {
       <div className="SingleBook" onClick={goToAbout}>
         {genres != null ? genres : ""}
         <div className="Bookpic"></div>
-        <p>"BookName"</p>
+        <p>BookName</p>
         <p> Writer</p>
         <p> 대출정보</p>
       </div>
